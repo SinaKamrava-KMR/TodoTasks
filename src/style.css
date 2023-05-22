@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+
+}
+
+@layer components{
+
+  .search-box{
+    @apply max-w-full   flex gap-2 py-3 flex-wrap
+  }
+
+  .todo-wrapper{
+    @apply flex-1  rounded-md min-w-[250px] flex flex-col items-center py-4 px-5 [&>h2]:font-bold [&>h2]:text-lg [&>h2]:text-slate-800  h-[446px]
+  }
+
+  .todo-list{
+    @apply w-full h-full overflow-y-scroll  py-2 flex flex-col gap-2 scrollbar-hide
+  }
+
+  .card{
+    @apply bg-slate-50 rounded-sm relative p-3 
+  }
+
+
+}

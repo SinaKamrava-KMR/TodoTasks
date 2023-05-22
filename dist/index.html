@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="h-screen w-screen">
+    <section class="w-5/6 h-screen flex flex-col mx-auto py-3">
+      <div class="search-box">
+        <input
+          id="taskTitle"
+          type="text"
+          class="border h-12 border-slate-300 flex-1 outline-0 rounded-md text-slate-800 px-3"
+          placeholder="Todo Title"
+        />
+        <input
+          id="taskDate"
+          type="date"
+          class="outline-0 border border-slate-300 rounded-md px-3"
+        />
+        <input
+          id="submit"
+          type="submit"
+          value="Sub"
+          class="bg-green-600 text-white px-10 rounded-md hover:bg-green-700"
+        />
+        <textarea
+          id="descriptionTask"
+          class="w-full order-10 outline-0 border border-slate-300 rounded-md p-3 text-slate-800"
+          cols="15"
+          rows="2"
+          placeholder="Todo Discription"
+        >
+        </textarea>
+      </div>
+
+      <section class="w-full flex-1 flex gap-4 flex-wrap justify-between">
+        <div class="todo-wrapper bg-sky-200">
+          <h2>Tasks</h2>
+          <div id="tasks" class="todo-list"></div>
+        </div>
+        <div class="todo-wrapper bg-yellow-200">
+          <h2>Doing</h2>
+          <div id="doing" class="todo-list"></div>
+        </div>
+        <div class="todo-wrapper bg-emerald-200">
+          <h2>Complited</h2>
+          <div id="done" class="todo-list"></div>
+        </div>
+      </section>
+    </section>
+
+    <script type="module" src="scripts/app.js"></script>
+  </body>
+</html>
