@@ -10,8 +10,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.11.0/lottie.min.js" integrity="sha512-XCthc/WzPfa+oa49Z3TI6MUK/zlqd67KwyRL9/R19z6uMqBNuv8iEnJ8FWHUFAjC6srr8w3FMZA91Tfn60T/9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   </head>
-  <body class="h-screen w-screen">
+  <body class="h-screen w-screen relative">
+
+    <div id="animation-container" class="z-10 absolute inset-0 flex items-center justify-center invisible">
+      <div class="bg-slate-100 opacity-30 absolute inset-0 h-full w-full"></div>
+      <div id="animation-wrapper" class="z-20 "></div>
+    </div>
+
+    
+
     <section class="w-5/6 h-screen flex flex-col mx-auto py-3">
       <div class="search-box">
         <input

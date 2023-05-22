@@ -4,7 +4,7 @@ export class HttpClient {
     this.baseUrl = baseUrl;
   }
 
-  async getAllDate() {
+  async getAllData() {
     try {
       const response = await fetch(`${this.baseUrl}tasks`);
       if (!response.ok) throw new Error("can not get data from database");
